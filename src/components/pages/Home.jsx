@@ -51,8 +51,8 @@ function Home() {
   } else {
     return (
       <div className="dark:bg-gray-800 dark:text-white">
-        <div className="py-4 flex justify-between items-center gap-28 container">
-          <div className="flex items-center rounded-sm gap-2 pr-10 shadow pl-4 text-gray-400 focus-within:text-gray-600 dark:bg-gray-600 dark:text-white">
+        <div className="py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 container">
+          <div className="flex items-center rounded-md gap-2 pr-10 shadow pl-4 text-gray-400 focus-within:text-gray-600 dark:bg-gray-600 dark:text-white">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function Home() {
             />
           </div>
           <select
-            className="shadow w-44 border-0 rounded-sm px-3 text-gray-500 focus:ring-0 dark:bg-gray-600 dark:text-white"
+            className="shadow w-44 border-0 rounded-md px-3 text-gray-500 focus:ring-0 dark:bg-gray-600 dark:text-white"
             onChange={(e) => {
               setFilterParam(e.target.value);
             }}
@@ -93,12 +93,12 @@ function Home() {
           </select>
         </div>
 
-        <div className="container grid grid-cols-4 gap-12 py-6">
+        <div className="container grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-12 py-6">
           {search(countries).map((country) => (
             <Link
               to={`/${country.callingCodes}`}
               key={country.numericCode}
-              className="max-w-xs shadow-lg rounded-b-lg dark:bg-gray-700"
+              className="w-full md:max-w-xs shadow-lg rounded-b-lg dark:bg-gray-700"
             >
               <div className="w-full">
                 <img

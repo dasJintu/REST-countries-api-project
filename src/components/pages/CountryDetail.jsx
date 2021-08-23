@@ -51,7 +51,7 @@ function CountryDetail() {
           </Link>
           {countries.map((country) => (
             <div
-              className="mt-12 grid grid-cols-2 gap-16 items-center"
+              className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
               key={country.numericCode}
             >
               <img className="w-full" src={country.flag} alt="" />
