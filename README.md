@@ -41,8 +41,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/dasJintu/REST-countries-api-project)
-- Live Site URL: [Add live site URL here](https://countries-api-project-fm.netlify.app/)
+- Solution URL: [solution URL](https://github.com/dasJintu/REST-countries-api-project)
+- Live Site URL: [live site URL](https://countries-api-project-fm.netlify.app/)
 
 ## My process
 
